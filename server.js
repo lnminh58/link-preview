@@ -18,7 +18,7 @@ app.get('/api/link-preview', async (req, res) => {
       headers: {
         'user-agent': 'googlebot', // fetches with googlebot crawler user agent
       },
-      timeout: 1000,
+      timeout: 30000,
     });
     console.log('getLinkPreview', result);
 
