@@ -24,7 +24,7 @@ app.get('/api/link-preview', async (req, res) => {
 
     res.send(result);
   } catch (error) {
-    console.log('error');
+    console.log('error', error);
     res.send(error);
   }
 });
