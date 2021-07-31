@@ -18,9 +18,9 @@ app.get('/api/link-preview', async (req, res) => {
 
     const result = await getLinkPreview(content, {
       imagesPropertyType: 'og', // fetches only open-graph images
-      headers: {
-        'user-agent': 'googlebot', // fetches with googlebot crawler user agent
-      },
+      // headers: {
+      //   'user-agent': 'googlebot', // fetches with googlebot crawler user agent
+      // },
       timeout: 30000,
     });
     console.log('getLinkPreview', result);
